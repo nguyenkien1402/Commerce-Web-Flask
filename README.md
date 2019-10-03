@@ -1,2 +1,2 @@
-# Commerce-Web-Flask
-A purly Flask web app commerce, power by google app engine. 
+# Commercial-Web-Flask
+A purly Flask web app commercial, using machine leanring to automatically label the uploaded images
