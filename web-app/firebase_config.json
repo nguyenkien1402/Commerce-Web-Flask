@@ -1,0 +1,8 @@
+{
+    "apiKey": "AIzaSyDACpscSOSvds81ehqYuKGxYdJpRc8DRn0",
+    "authDomain": "commerce-store-serverless.firebaseapp.com",
+    "databaseURL": "https://commerce-store-serverless.firebaseio.com",
+    "projectId": "commerce-store-serverless",
+    "storageBucket": "commerce-store-serverless.appspot.com",
+    "messagingSenderId": "395383995208"
+}
