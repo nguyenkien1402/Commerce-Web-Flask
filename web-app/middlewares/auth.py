@@ -40,12 +40,12 @@ def auth_required(f):
         firebase_id_token = request.cookies.get('firebase_id_token')
         if not firebase_id_token:
             print("Not authenticated")
-            return redirect(url_for('product_catalog_page.display'))
+            return redirect('/signin')
 
         auth_context = verify_firebase_id_token(firebase_id_token)
         if not auth_context:
             print("I think the token is invalid")
-            return redirect(url_for('product_catalog_page.display'))
+            return redirect('/signin')
 
         return f(auth_context=auth_context, *args, **kwargs)
     return decorated

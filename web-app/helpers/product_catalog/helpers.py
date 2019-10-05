@@ -1,11 +1,15 @@
 from dataclasses import asdict
 import os
 import uuid
+from utilities import firebase_config
 
 from google.cloud import firestore
 from .data_classes import Product, PromoEntry
 
-BUCKET = os.environ.get('GCS_BUCKET')
+# BUCKET = os.environ.get('GCS_BUCKET')
+BUCKET = firebase_config.GCS_BUCKET
+
+
 firestore_client = firestore.Client()
 
 def add_product(product):

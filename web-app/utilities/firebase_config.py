@@ -1,0 +1,1 @@
+GCS_BUCKET = "commerce-store-serverless.appspot.com"

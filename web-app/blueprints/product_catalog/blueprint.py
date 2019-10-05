@@ -6,7 +6,7 @@ from helpers import product_catalog
 product_catalog_page = Blueprint('product_catalog_page',__name__)
 
 @product_catalog_page.route('/')
-@auth_optional
+@auth_required
 def display(auth_context):
     """
     View function for displaying product catalog
@@ -19,9 +19,9 @@ def display(auth_context):
     # Get products
     products = product_catalog.list_product()
     # Get promoted product by recommendation
-    promos = product_catalog.get_promos()
+    # promos = product_catalog.get_promos()
     return render_template('product_catalog.html',
                            products=products,
-                           promos=promos,
+                           promos=None,
                            auth_context=auth_context,
                            bucket=product_catalog.BUCKET)
