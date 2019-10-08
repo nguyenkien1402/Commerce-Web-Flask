@@ -15,14 +15,14 @@ def verify_firebase_id_token(token):
     try:
         full_auth_context = auth.verify_id_token(token)
         print(full_auth_context)
-    except ValueError:
+        auth_context = {
+            'username': full_auth_context.get('name'),
+            'uid': full_auth_context.get('uid'),
+            'email': full_auth_context.get('email')
+        }
+    except:
         return {}
 
-    auth_context = {
-        'username':full_auth_context.get('name'),
-        'uid':full_auth_context.get('uid'),
-        'email':full_auth_context.get('email')
-    }
     return auth_context
 
 def auth_required(f):
@@ -63,6 +63,7 @@ def auth_optional(f):
     @wraps(f)
     def decorated(*args, **kwargs):
         firebase_id_token = request.cookies.get('firebase_id_token')
+        print("token:",firebase_id_token)
         if not firebase_id_token:
             return f(auth_context=None, *args, **kwargs)
 

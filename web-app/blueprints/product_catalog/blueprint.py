@@ -3,10 +3,10 @@ from middlewares.auth import *
 from helpers import product_catalog
 
 
-product_catalog_page = Blueprint('product_catalog_page',__name__)
+product_catalog_page = Blueprint('product_catalog_page', __name__)
 
 @product_catalog_page.route('/')
-@auth_required
+@auth_optional
 def display(auth_context):
     """
     View function for displaying product catalog
