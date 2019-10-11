@@ -40,16 +40,18 @@ async function addToCartRequest(id, update, restore) {
 
 function addToCartInProductCatalog(button) {
     const id = button.attributes.getNamedItem(`data-product-id`).value;
+
     button.innerText = `Processing`;
     button.attributes.onclick = ``;
-    function updateButton() {
-        button.attributes.onclick = `removeFromCartInProductCatalog(this)`;
-        button.innerText = `Remove`;
-    }
     function restoreButton() {
         button.innerText = `Add to Cart`;
         button.attributes.onclick = `addToCartInProductCatalog(this)`;
     }
+    function updateButton() {
+        button.attributes.onclick = `removeFromCartInProductCatalog(this)`;
+        button.innerText = `Remove`;
+    }
+
     addToCartRequest(id, updateButton, restoreButton);
 }
 
@@ -86,13 +88,13 @@ function removeFromCartInProductCatalog(button) {
   const id = button.attributes.getNamedItem(`data-product-id`).value;
   button.innerText = `Processing`;
   button.attributes.onclick = ``;
-  function updateButton() {
-      button.attributes.onclick = `addToCartInProductCatalog(this)`;
-      button.innerText = `Add to Cart`;
-  }
   function restoreButton() {
       button.innerText = `Remove`;
       button.attributes.onclick = `removeFromCartInProductCatalog(this)`;
+  }
+    function updateButton() {
+      button.attributes.onclick = `addToCartInProductCatalog(this)`;
+      button.innerText = `Add to Cart`;
   }
   removeFromCartRequest(id, updateButton, restoreButton);
 }

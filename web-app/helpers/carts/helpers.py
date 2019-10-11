@@ -23,3 +23,41 @@ def get_cart(uid):
         item = CartItem.deserialize(result)
         cart.append(item)
     return cart
+
+
+def add_to_cart(uid, item_id):
+    """
+    Helper function for adding an item to a cart
+    :param
+        uid: the unique ID of the user
+        item_id: the ID of the item
+    :return:
+        None.
+    """
+    item = CartItem(
+        uid=uid,
+        item_id=item_id,
+        modify_time=int(time.time())
+    )
+    firestore_client.collection('carts').document().set(asdict(item))
+
+
+def remove_from_cart(uid, item_id):
+    """
+    Helper function to remove an item from cart
+    :param
+        uid: the unique ID of the user
+        item_id: the ID of the item
+    :return:
+        None
+    """
+    transaction = firestore_client.transaction()
+
+    @firestore.transactional
+    def transactional_remove_from_cart(transaction, uid, item_id):
+        query_result = firestore_client.collection("carts").where('uid', '==', uid).where('item_id', '==', item_id).get()
+        for result in query_result:
+            reference = firestore_client.collection('carts').document(result.id)
+            transaction.delete(reference)
+
+    transactional_remove_from_cart(transaction, uid, item_id)
