@@ -42,7 +42,7 @@ def list_product():
         A list of product
     """
     products = firestore_client.collection('products').order_by('created_at').get()
-    product_list =[Product.deserialize(product) for product in list(products)]
+    product_list = [Product.deserialize(product) for product in list(products)]
     return product_list
 
 

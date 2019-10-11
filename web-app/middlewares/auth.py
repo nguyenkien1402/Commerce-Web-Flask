@@ -1,6 +1,6 @@
 from functools import wraps
 from flask import redirect, request, url_for
-from firebase_admin import  auth
+from firebase_admin import auth
 
 def verify_firebase_id_token(token):
     """
