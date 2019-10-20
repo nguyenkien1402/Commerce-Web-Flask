@@ -55,10 +55,10 @@ def remove(auth_context):
     :return:
         Text message with HTTP status code 200
     """
-    print("Remove")
     uid = auth_context.get('uid')
-    item_id = auth_context.get('id')
+    item_id = request.form.get('id')
+    print("Remove:"+item_id)
     if item_id:
-        carts.remove_from_cart(uid,item_id)
+        carts.remove_from_cart(uid, item_id)
         return "Operation Completed", 200
     return "Operation Failed", 400

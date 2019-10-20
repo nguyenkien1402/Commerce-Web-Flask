@@ -17,7 +17,6 @@ def display(auth_context):
     :return:
         render HTML page
     """
-    print("Go for checkout")
     products = []
     # Prepares the checkout form
     form = CheckOutForm()
@@ -37,7 +36,6 @@ def display(auth_context):
             products.append(product)
 
     if products:
-        print("Checkout HTML")
         return render_template('checkout.html',
                                products=products,
                                auth_context=auth_context,

@@ -8,6 +8,7 @@ from utilities import firebase_config
 sell_page = Blueprint('sell_page',__name__)
 # PUBSUB_TOPIC_NEW_PRODUCT = os.environ.get('PUBSUB_TOPIC_NEW_PRODUCT')
 PUBSUB_TOPIC_NEW_PRODUCT = firebase_config.PUBSUB_TOPIC_NEW_PRODUCT
+
 @sell_page.route('/sell', methods=['GET'])
 @auth_required
 def display(auth_context):
@@ -46,12 +47,12 @@ def proccess(auth_context, form):
     # subscribe to the topic and save the event to BigQuery for
     # data analytics upon arrival of new events
     # ******The code below is for machine learning ***** #
-    # eventing.stream_event(
-    #     topic_name=PUBSUB_TOPIC_NEW_PRODUCT,
-    #     event_type='label_detection',
-    #     event_context={
-    #         'product_id': product_id,
-    #         'product_image': product.image
-    #     }
-    # )
+    eventing.stream_event(
+        topic_name=PUBSUB_TOPIC_NEW_PRODUCT,
+        event_type='label_detection',
+        event_context={
+            'product_id': product_id,
+            'product_image': product.image
+        }
+    )
     return redirect('/sell')

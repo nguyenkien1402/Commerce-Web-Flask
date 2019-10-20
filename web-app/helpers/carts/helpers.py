@@ -18,10 +18,12 @@ def get_cart(uid):
     """
 
     cart = []
-    query_results = firestore_client.collection('carts').where('uid','==',uid).order_by('modify_item', direction=firestore.Query.DESCENDING).get()
+    print("uid:"+uid)
+    query_results = firestore_client.collection('carts').where('uid','==',uid).order_by('modify_time', direction=firestore.Query.DESCENDING).stream()
     for result in query_results:
         item = CartItem.deserialize(result)
         cart.append(item)
+    print(len(cart))
     return cart
 
 
@@ -52,11 +54,12 @@ def remove_from_cart(uid, item_id):
         None
     """
     transaction = firestore_client.transaction()
-
+    print("Go to remove")
     @firestore.transactional
     def transactional_remove_from_cart(transaction, uid, item_id):
-        query_result = firestore_client.collection("carts").where('uid', '==', uid).where('item_id', '==', item_id).get()
+        query_result = firestore_client.collection("carts").where('uid', '==', uid).where('item_id', '==', item_id).stream()
         for result in query_result:
+            print(result.id)
             reference = firestore_client.collection('carts').document(result.id)
             transaction.delete(reference)
 

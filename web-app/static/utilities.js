@@ -18,7 +18,7 @@ const addToCartURL = `/cart`;
 const deleteFromCartURL = `/cart`;
 var provider = new firebase.auth.GoogleAuthProvider();
 
-async function addToCartRequest(id, update, restore) {
+async function addToCartRequest(id, button) {
   try {
     await fetch(addToCartURL, {
       method: "POST",
@@ -31,29 +31,34 @@ async function addToCartRequest(id, update, restore) {
       referrer: "no-referrer",
       body: `id=${id}`
     })
-    update();
+    updateButton(button);
   } catch (error) {
     console.log(error);
-    restore();
+    restoreButton(button);
   }
 }
 
-function addToCartInProductCatalog(button) {
-    const id = button.attributes.getNamedItem(`data-product-id`).value;
 
-    button.innerText = `Processing`;
-    button.attributes.onclick = ``;
-    function restoreButton() {
-        button.innerText = `Add to Cart`;
-        button.attributes.onclick = `addToCartInProductCatalog(this)`;
-    }
-    function updateButton() {
-        button.attributes.onclick = `removeFromCartInProductCatalog(this)`;
-        button.innerText = `Remove`;
-    }
-
-    addToCartRequest(id, updateButton, restoreButton);
+function updateButton(button) {
+    button.innerText = `Remove11`;
+    button.attributes.onclick = `removeFromCartInProductCatalog(button)`;
 }
+function restoreButton(button) {
+    button.innerText = `Add to Cart`;
+    button.attributes.onclick = 'addToCartInProductCatalog(button)';
+}
+
+function addToCartInProductCatalog(button) {
+
+    if(button != undefined && button.attributes != undefined){
+        const id = button.attributes.getNamedItem(`data-product-id`).value;
+        button.innerText = `Processing`;
+        button.attributes.onclick = ``;
+        addToCartRequest(id, button);
+    }
+}
+
+
 
 function getCookie(name) {
   let cookie = {};
@@ -88,13 +93,13 @@ function removeFromCartInProductCatalog(button) {
   const id = button.attributes.getNamedItem(`data-product-id`).value;
   button.innerText = `Processing`;
   button.attributes.onclick = ``;
+  function updateButton() {
+      button.attributes.onclick = 'addToCartInProductCatalog(this)';
+      button.innerText = `Add to Cart`;
+  }
   function restoreButton() {
       button.innerText = `Remove`;
-      button.attributes.onclick = `removeFromCartInProductCatalog(this)`;
-  }
-    function updateButton() {
-      button.attributes.onclick = `addToCartInProductCatalog(this)`;
-      button.innerText = `Add to Cart`;
+      button.attributes.onclick = 'removeFromCartInProductCatalog(this)';
   }
   removeFromCartRequest(id, updateButton, restoreButton);
 }
