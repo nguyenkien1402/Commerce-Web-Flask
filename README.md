@@ -46,9 +46,13 @@ The workflow of the application:
 The detail of how I constructed the application which integrate Google technologies will coming soon.
 
 Some images of the application
+## Home Page ##
 ![Home page 1](/images/image_2.png)
 ![Home page 2](/images/image_1.png)
 
+## Checkout ##
 ![Checkout](/images/image_3.png)
+
+## Stripe Payment ##
 ![Checkout](/images/image_3.png)
 
