@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3110edef-7073-4589-b07d-07cea9199d38" name="Default Changelist" comment="remain the error of adding and removing from homepage">
-      <change afterPath="$PROJECT_DIR$/../functions/pay_with_stripe/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../functions/pay_with_stripe/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../functions/upload_image/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blueprints/cart/blueprint.py" beforeDir="false" afterPath="$PROJECT_DIR$/blueprints/cart/blueprint.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blueprints/checkout/blueprint.py" beforeDir="false" afterPath="$PROJECT_DIR$/blueprints/checkout/blueprint.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blueprints/sell/blueprint.py" beforeDir="false" afterPath="$PROJECT_DIR$/blueprints/sell/blueprint.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/carts/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/carts/helpers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/utilities.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/utilities.js" afterDir="false" />
-    </list>
+    <list default="true" id="3110edef-7073-4589-b07d-07cea9199d38" name="Default Changelist" comment="remain the error of adding and removing from homepage" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blueprints/sell/blueprint.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="47" column="46" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
+            <state relative-caret-position="381">
+              <caret line="50" column="37" lean-forward="true" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
               </folding>
@@ -328,7 +318,7 @@
       <workItem from="1570934601638" duration="1359000" />
       <workItem from="1571347993108" duration="7349000" />
       <workItem from="1571357403106" duration="1864000" />
-      <workItem from="1571536971330" duration="1012000" />
+      <workItem from="1571536971330" duration="1621000" />
     </task>
     <task id="LOCAL-00001" summary="Create new web page and api key">
       <created>1570188265340</created>
@@ -376,11 +366,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68428000" />
+    <option name="totallyTimeSpent" value="69037000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25838926" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -788,8 +777,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blueprints/sell/blueprint.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="47" column="46" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
+        <state relative-caret-position="381">
+          <caret line="50" column="37" lean-forward="true" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
           <folding>
             <element signature="e#0#54#0" expanded="true" />
           </folding>
