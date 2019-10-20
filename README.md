@@ -54,5 +54,5 @@ Some images of the application
 ![Checkout](/images/image_3.png)
 
 ## Stripe Payment ##
-![Checkout](/images/image_3.png)
+![Checkout](/images/image_5.png)
 
