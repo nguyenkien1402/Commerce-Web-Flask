@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1984dc7e-5588-42c9-a716-190c42949248" name="Default Changelist" comment="Add the pubsub cloud function for uploading image&#10;Update sell page, go to go to upload new product now">
-      <change afterPath="$PROJECT_DIR$/functions/pay_with_stripe/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/pay_with_stripe/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/upload_image/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-app/app_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/web-app/app_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-app/blueprints/cart/blueprint.py" beforeDir="false" afterPath="$PROJECT_DIR$/web-app/blueprints/cart/blueprint.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-app/blueprints/checkout/blueprint.py" beforeDir="false" afterPath="$PROJECT_DIR$/web-app/blueprints/checkout/blueprint.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-app/blueprints/sell/blueprint.py" beforeDir="false" afterPath="$PROJECT_DIR$/web-app/blueprints/sell/blueprint.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-app/helpers/carts/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/web-app/helpers/carts/helpers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-app/static/utilities.js" beforeDir="false" afterPath="$PROJECT_DIR$/web-app/static/utilities.js" afterDir="false" />
-    </list>
+    <list default="true" id="1984dc7e-5588-42c9-a716-190c42949248" name="Default Changelist" comment="Add the pubsub cloud function for uploading image&#10;Update sell page, go to go to upload new product now" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,8 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/functions/pay_with_stripe/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-242">
-              <caret line="61" column="35" lean-forward="true" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
+            <state relative-caret-position="1479">
+              <caret line="87" column="47" selection-start-line="87" selection-start-column="47" selection-end-line="87" selection-end-column="47" />
               <folding>
                 <element signature="e#634#647#0" expanded="true" />
               </folding>
@@ -178,28 +168,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Default Changelist'; set:Default Changelist; class com.intellij.packageDependencies.ChangeListScope">
-          <expand>
-            <path>
-              <item name="Commerce-Web-Flask" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="Commerce-Web-Flask" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="functions" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Commerce-Web-Flask" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="functions" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="pay_with_stripe" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -242,7 +211,7 @@
       <workItem from="1570530232285" duration="6117000" />
       <workItem from="1570620247896" duration="6560000" />
       <workItem from="1570791683882" duration="923000" />
-      <workItem from="1571537123596" duration="1003000" />
+      <workItem from="1571537123596" duration="1105000" />
     </task>
     <task id="LOCAL-00001" summary="Add the pubsub cloud function for uploading image&#10;Update sell page, go to go to upload new product now">
       <created>1570535534953</created>
@@ -255,7 +224,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14603000" />
+    <option name="totallyTimeSpent" value="14705000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
@@ -546,8 +515,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/functions/pay_with_stripe/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-242">
-          <caret line="61" column="35" lean-forward="true" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
+        <state relative-caret-position="1479">
+          <caret line="87" column="47" selection-start-line="87" selection-start-column="47" selection-end-line="87" selection-end-column="47" />
           <folding>
             <element signature="e#634#647#0" expanded="true" />
           </folding>
