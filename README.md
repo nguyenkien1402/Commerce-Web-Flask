@@ -43,4 +43,12 @@ The workflow of the application:
 5.  Go to the cart and choose checkout
 6.  Enter information and pay with the stripe.
 
-The detail of how I constructed the application which integrate Google technologies will coming soon
+The detail of how I constructed the application which integrate Google technologies will coming soon.
+
+Some images of the application
+![Home page 1](/images/image_2.png)
+![Home page 2](/images/image_1.png)
+
+![Checkout](/images/image_3.png)
+![Checkout](/images/image_3.png)
+
