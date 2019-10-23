@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "commerce-store-serverless",
+  "private_key_id": "e83f8bec0cd9aaf81648f768efadc5b457b96ab8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC2lzbtKycyXTCN\nEV819p3NN48mSPxio+/A1Ojolw4bTxBt0DpI7k83qoVlybZ4GR6sHbj24H/aBX1p\nt9+VHCinTu0oln7eZkeQimY1no1OBuIjS5O8q2X7AaSze9kkutIqNHzDGZP+YOEx\nje7BAtfRAo+UVS3v7XsUNxirrmZ8vN9s8fxSRYNaQTdwEM2nCcLcy8UkvaixcxIb\nkFeuiKcIzrmhu8VoeRa36KP8GNJhtaWrUg73nTXA4JPhmhS8/Dwqv4gP5nmExq66\neeLTs7kBrEcMiS2u4burB0g0MmhwQQSPDVvHAhA84ZHHD11ULgxT1Nzgn97MobD8\ng25Jy/O3AgMBAAECggEAEzyGIGF5/S/dNBd+8Of9AwhV8AIjeN7tnOKxcQOtDEp9\noBweb92Pgf1YlXs1WpzG4vo0qOnI/naymkcxanuvesTxbmPAlPywkHVMRFziZTSL\ncY1+UJO8KEApknE7VMfL6X9jH4jb0yJwxzA9VZ9PjmkXKFj7AHqEC4KsejXi/UQY\n9F7gk/fkyngGflTg910d8w/DpuikTeRz/mZRjGik2LJBIZ5MqISZlzcvabv5W5TD\nsDok1HtS4e/DFYExdeC0H7eHeHDvRlgNQKPcRh/SJNYUiVh5qDriAcr9nUE+ABlY\nF9nPR/on4MCgie0NYWPViYJsCnId7jLKnr48iHEl6QKBgQDwUDrCu58HaspiF7Jm\n3onEJ653Rnp4hmr/gKIiNYQibzoJSxZOBAfwJeZPK0dFQGjbEozscEzZfV1zB5ul\nFJITrCiS1N96Etq4eg2Wf1jPP/IgGLrfaxuGALj596yb5Y6KPUM3NUsrHJftq+jt\nXn7XEuE8VbaLLdzd2atfkQmEWQKBgQDCgmgHofD/9EEEYgz4AYDRTLvprdQiQ0oA\nEm//8Xl8vtb4iFnbBpcApasaLlTk49JCcwgYJGxSWrxbOEVnQdpV3ImtZPvZHYWR\nyJ9IWCIsyWAT4P0dnJwi/YahIdBVWCEqNPJ1oMUoF1CVDPu2hRdhGneL0kLC+Fbc\nPL9tjwp2jwKBgAWXiFaBsSimBoGT1ZXpNcF3vuqNnEnzrse1QZCUODfo6KvQsHsu\nQtUGvL443paw8f+vBdJ2poMlFKiZk7iaqu+EQQlxpKWdjLNgO7K10eY4sbSnfqm2\nP1S17Zf7eGvEQrXayRaeydn991cTef8UBNWSXeVehTnl3k7XQtKdeGA5AoGBALL/\nvWqgvh9eEWNONG8bOwfh3OB8hscNM5GDZiycdVe2bDCFkmN82gPPcfmC/78wZTOf\nlqhZBJJ5S/OKglw2/w2bCdxXHWm9wEjb3rF94d1jaJaCq4zPreSJeZbZfla75rFn\nzmUvkaCGbDLuospiCpTi/XbgBW5VieHdybCyPUfDAoGAKzNZNDHAgkzXfdnb2l6/\nbXiwargDspkn7FUZ+TTYIKu45s0HiEyxkTvtgYRCX5/UbUK1O9aPJg8Sos10b+70\nSzmc8jGxov1u30mwYGHRkadTj6C5tPr5alFDPVZ1aZMwKfKCZ4fAT1LAGxoA/pcd\nwKi1//7Lxe+aW1Q0gTISQ48=\n-----END PRIVATE KEY-----\n",
+  "client_email": "commercial-serverless@commerce-store-serverless.iam.gserviceaccount.com",
+  "client_id": "101012063013538790327",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/commercial-serverless%40commerce-store-serverless.iam.gserviceaccount.com"
+}
